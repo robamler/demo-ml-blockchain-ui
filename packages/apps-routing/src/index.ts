@@ -17,6 +17,7 @@ import council from './council';
 import democracy from './democracy';
 import explorer from './explorer';
 import extrinsics from './extrinsics';
+import matrixFactorization from './matrix-factorization';
 import genericAsset from './generic-asset';
 import i18n from './i18n';
 import js from './js';
@@ -31,7 +32,7 @@ import toolbox from './toolbox';
 import transfer from './transfer';
 import treasury from './treasury';
 
-export default function create (t: <T = string> (key: string, text: string, options: { ns: string }) => T): Routes {
+export default function create(t: <T = string> (key: string, text: string, options: { ns: string }) => T): Routes {
   return appSettings.uiMode === 'light'
     ? [
       // dashboard,
@@ -39,6 +40,7 @@ export default function create (t: <T = string> (key: string, text: string, opti
       accounts(t),
       claims(t),
       transfer(t),
+      matrixFactorization(t),
       genericAsset(t),
       null,
       staking(t),
@@ -67,6 +69,7 @@ export default function create (t: <T = string> (key: string, text: string, opti
       contracts(t),
       storage(t),
       extrinsics(t),
+      matrixFactorization(t),
       sudo(t),
       null,
       settings(t),
