@@ -3119,6 +3119,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@polkadot/app-matrix-factorization@workspace:packages/page-matrix-factorization":
+  version: 0.0.0-use.local
+  resolution: "@polkadot/app-matrix-factorization@workspace:packages/page-matrix-factorization"
+  dependencies:
+    "@babel/runtime": ^7.10.2
+    "@polkadot/react-components": 0.46.0-beta.30
+    "@polkadot/react-params": 0.46.0-beta.30
+    "@polkadot/react-signer": 0.46.0-beta.30
+  languageName: unknown
+  linkType: soft
+
 "@polkadot/app-parachains@workspace:packages/page-parachains":
   version: 0.0.0-use.local
   resolution: "@polkadot/app-parachains@workspace:packages/page-parachains"

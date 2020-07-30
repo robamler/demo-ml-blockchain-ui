@@ -73,6 +73,7 @@
     "test": "polkadot-dev-run-test packages/page-claims/src",
     "test:one": "polkadot-dev-run-test",
     "start": "yarn clean && cd packages/apps && webpack --config webpack.config.js",
+    "start2": "yarn clean && cd packages/apps && webpack --config webpack2.config.js",
     "start:electron": "yarn clean:electronBuild && concurrently 'yarn build:devElectronMain && cd packages/apps-electron && electron ./build/electron.js' 'yarn build:devElectronRenderer'"
   },
   "devDependencies": {
